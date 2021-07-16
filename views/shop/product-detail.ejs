@@ -1,0 +1,29 @@
+<%- include("../includes/head")%>
+	</head>
+	<body>
+		<%- include('../includes/navigation')%>
+        
+            <div class="centered">
+                <h1>
+             <%= product.name%>
+                </h1>
+                <h1>
+                    <%= product.productWeight%>
+                </h1>
+                <h1>
+                    <%= product.shortDescription%>
+                </h1>
+                <h1>
+                    <%= product.fullDescription%>
+                </h1>
+                <h1>
+                    <%= product.oldPrice%>
+                </h1>
+                <h1>
+                    <%= product.newPrice%>
+                </h1>
+                <div class="image">
+                    <img src="/<%= product.imageUrl %>" alt="<%= product.name %>">
+                </div>
+            </div>
+            <%- include("../includes/footer.ejs") %>
